@@ -6,7 +6,7 @@
   <link href="https://jenting-wu.github.io/atom.xml" rel="self"/>
   
   <link href="https://jenting-wu.github.io/"/>
-  <updated>2021-11-06T14:14:57.214Z</updated>
+  <updated>2021-11-06T14:16:44.788Z</updated>
   <id>https://jenting-wu.github.io/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="https://jenting-wu.github.io/2021/11/06/My-Movie-Theater/"/>
     <id>https://jenting-wu.github.io/2021/11/06/My-Movie-Theater/</id>
     <published>2021-11-06T11:57:10.983Z</published>
-    <updated>2021-11-06T14:14:57.214Z</updated>
+    <updated>2021-11-06T14:16:44.788Z</updated>
     
-    <content type="html"><![CDATA[<!DOCTYPE html><html lang="en"><head>    <meta charset="UTF-8">    <meta http-equiv="X-UA-Compatible" content="IE=edge">    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>My movie theater</title></head><body>    <img style="width: 100px;height: 100px;;background-color: antiquewhite;" src="My-Movie-Theater/image/0014.png"        alt=""></body></html>]]></content>
+    <content type="html"><![CDATA[<!DOCTYPE html><html lang="en"><head>    <meta charset="UTF-8">    <meta http-equiv="X-UA-Compatible" content="IE=edge">    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>My movie theater</title></head><body>    <img style="width: 100px;height: 100px;;background-color: antiquewhite;" src="/My-Movie-Theater/image/0014.png"        alt=""></body></html>]]></content>
     
     
       
@@ -47,15 +47,12 @@
     <link href="https://jenting-wu.github.io/2021/11/02/Markdown/"/>
     <id>https://jenting-wu.github.io/2021/11/02/Markdown/</id>
     <published>2021-11-02T12:40:34.000Z</published>
-    <updated>2021-11-02T18:17:43.417Z</updated>
+    <updated>2021-11-06T14:16:18.933Z</updated>
     
     <content type="html"><![CDATA[<h1 id="標題"><a href="#標題" class="headerlink" title="標題"></a>標題</h1><h1 id="This-is-an-H1"><a href="#This-is-an-H1" class="headerlink" title="This is an H1"></a>This is an H1</h1><h2 id="This-is-an-H2"><a href="#This-is-an-H2" class="headerlink" title="This is an H2"></a>This is an H2</h2><h3 id="This-is-an-H3"><a href="#This-is-an-H3" class="headerlink" title="This is an H3"></a>This is an H3</h3><h4 id="This-is-an-H4"><a href="#This-is-an-H4" class="headerlink" title="This is an H4"></a>This is an H4</h4><h5 id="This-is-an-H5"><a href="#This-is-an-H5" class="headerlink" title="This is an H5"></a>This is an H5</h5><h6 id="This-is-an-H6"><a href="#This-is-an-H6" class="headerlink" title="This is an H6"></a>This is an H6</h6><h1 id="粗體-lt-strong-gt"><a href="#粗體-lt-strong-gt" class="headerlink" title="粗體 &lt;strong&gt;"></a>粗體 &lt;strong&gt;</h1><p>使用雙星號(**)包住文字內容<br>ex: <strong>粗體字</strong></p><h1 id="斜體-lt-em-gt"><a href="#斜體-lt-em-gt" class="headerlink" title="斜體 &lt;em&gt;"></a>斜體 &lt;em&gt;</h1><p>使用星號(*)包住文字內容<br>ex: <em>斜體字</em></p><h1 id="刪除線-lt-s-gt"><a href="#刪除線-lt-s-gt" class="headerlink" title="刪除線 &lt;s&gt;"></a>刪除線 &lt;s&gt;</h1><p>使用雙波浪號(~~)包住文字內容<br>ex: <del>刪除線</del></p><h1 id="分隔線-lt-hr-gt"><a href="#分隔線-lt-hr-gt" class="headerlink" title="分隔線 &lt;hr&gt;"></a>分隔線 &lt;hr&gt;</h1><p>主要為兩種<br>ex:</p><ol><li>***</li></ol><hr><ol start="2"><li>---</li></ol><hr><h1 id="插入連結"><a href="#插入連結" class="headerlink" title="插入連結"></a>插入連結</h1><p>方式有兩種</p><ol><li>[連結名稱](超連結)<br>ex: <strong><a href="https://www.google.com/">Google</a></strong></li><li>&lt;超連結&gt;<br>ex: <strong><a href="https://www.google.com/">https://www.google.com</a></strong></li></ol><h1 id="項目清單"><a href="#項目清單" class="headerlink" title="項目清單"></a>項目清單</h1><p>無序清單 &lt;ul&gt;&lt;li&gt;</p><ol><li>*</li><li>+</li><li>-</li></ol><p>有序清單 &lt;ol&gt;&lt;li&gt;<br>1.<br>2.<br>3.<br>.<br>.</p><h1 id="引用標籤"><a href="#引用標籤" class="headerlink" title="引用標籤"></a>引用標籤</h1><p>使用大於符號(&gt;)，該標籤會生成 blockquote (SEO中表引用)<br>ex:</p><blockquote><p>引用此段話說明</p></blockquote><h1 id="圖片-lt-img-gt"><a href="#圖片-lt-img-gt" class="headerlink" title="圖片 &lt;img&gt;"></a>圖片 &lt;img&gt;</h1><p>![圖片名稱](圖片網址)<br>ex:<br><img src="https://images.unsplash.com/photo-1635810766860-18e7cd77dc7d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="企鵝"></p><h1 id="勾選"><a href="#勾選" class="headerlink" title="勾選"></a>勾選</h1><p>會產生 &lt;ul&gt;&lt;li&gt;<br>ex:</p><ul><li><input disabled="" type="checkbox"> 今天賣肝</li><li><input checked="" disabled="" type="checkbox"> 今天不賣肝</li></ul><p>注意 : 會透過 JavaScript 監聽操作，該標籤不一定適用於每個網站</p><h1 id="程式碼"><a href="#程式碼" class="headerlink" title="程式碼"></a>程式碼</h1><ol><li><p><strong>程式碼片段</strong><br>使用反引號(`)包覆文字內容<br>ex:<br>說明 <code>var a = 10;</code>。</p></li><li><p><strong>程式碼區塊</strong><br>使用三個反引號(```)包覆文字內容<br>ex:</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var a = 10;</span><br></pre></td></tr></table></figure></li><li><p><strong>程式碼高亮</strong><br>使用 highlight.js 套件<br>ex:<br>Javascript</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = <span class="number">10</span>;</span><br></pre></td></tr></table></figure><p>HTML</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>標題<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br></pre></td></tr></table></figure><p>PHP</p><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$a</span> = <span class="number">10</span>;</span><br></pre></td></tr></table></figure><p>SCSS</p><figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.hex-text</span>&#123;</span><br><span class="line">    <span class="attribute">color</span>:white;</span><br><span class="line">    &amp;<span class="selector-pseudo">:hover</span>&#123;</span><br><span class="line">        <span class="attribute">color</span>:<span class="number">#120012</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li></ol><h1 id="表格-lt-table-gt"><a href="#表格-lt-table-gt" class="headerlink" title="表格 &lt;table&gt;"></a>表格 &lt;table&gt;</h1><p>ex:</p><table><thead><tr><th align="center">標題</th><th align="center">標題</th><th align="center">標題</th></tr></thead><tbody><tr><td align="center">早上吃什麼?</td><td align="center">蛋餅</td><td align="center">豆漿</td></tr><tr><td align="center">中午吃什麼?</td><td align="center">炒飯</td><td align="center">蛋糕</td></tr><tr><td align="center">晚上吃什麼?</td><td align="center">晚上不吃飯</td><td align="center">晚上不吃飯</td></tr></tbody></table>]]></content>
     
     
-      
-      
-    <summary type="html">&lt;h1 id=&quot;標題&quot;&gt;&lt;a href=&quot;#標題&quot; class=&quot;headerlink&quot; title=&quot;標題&quot;&gt;&lt;/a&gt;標題&lt;/h1&gt;&lt;h1 id=&quot;This-is-an-H1&quot;&gt;&lt;a href=&quot;#This-is-an-H1&quot; class=&quot;headerlink&quot; title=</summary>
-      
+    <summary type="html">read more</summary>
     
     
     
