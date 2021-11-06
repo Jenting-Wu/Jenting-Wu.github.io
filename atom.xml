@@ -6,7 +6,7 @@
   <link href="https://jenting-wu.github.io/atom.xml" rel="self"/>
   
   <link href="https://jenting-wu.github.io/"/>
-  <updated>2021-11-06T14:16:18.933Z</updated>
+  <updated>2021-11-06T14:28:25.882Z</updated>
   <id>https://jenting-wu.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="https://jenting-wu.github.io/2021/11/06/My-Movie-Theater/"/>
+    <id>https://jenting-wu.github.io/2021/11/06/My-Movie-Theater/</id>
+    <published>2021-11-06T14:26:01.491Z</published>
+    <updated>2021-11-06T14:28:25.882Z</updated>
+    
+    <content type="html"><![CDATA[<!--停止使用模板 --><!DOCTYPE html><html lang="en"><head>    <meta charset="UTF-8">    <meta http-equiv="X-UA-Compatible" content="IE=edge">    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>My movie theater</title></head><body>    <img style="width: 300px;height: 300px; background-color: bisque;" src="0009.jpg" alt=""></body></html>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;!--停止使用模板 --&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Markdown</title>
