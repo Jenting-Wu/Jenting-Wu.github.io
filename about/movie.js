@@ -224,6 +224,7 @@ $('#movieData').on('click', '.movie', function () {
     $('#switch-arrow-left').css('visibility', 'hidden');
 
     // const myStage = '-1536px';
+    var openvh = $(window).height();
     if ($('.background-wrap').css('left') < '0px') {
         // 明亮場景
         $('.movieImage').css('transform', 'scale(2) rotateY(30deg) translateY(4px) translateZ(-270px) skewY(8deg) translateX(162px)');
@@ -240,7 +241,7 @@ $('#movieData').on('click', '.movie', function () {
         $('#movRelease').css('color', '#fff');
         $('#moreInfor').css('color', '#fff');
 
-
+        $('.ShowArea').css('margin-left', openvh * 1.12 - 314 + 'px')
 
     }
     else {
@@ -414,6 +415,9 @@ $('#switch-arrow-right').click(function () {
     $('#watch').addClass('switch11');
     $('#arrowdown').addClass('switch12');
     $('#exit').css('display', 'none');
+
+    $('.ShowArea').css('margin-left', '494px')
+
 })
 
 // movie:hover 的動態綁定
