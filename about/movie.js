@@ -416,7 +416,7 @@ $('#switch-arrow-right').click(function () {
     $('#arrowdown').addClass('switch12');
     $('#exit').css('display', 'none');
 
-    $('.ShowArea').css('margin-left', '494px')
+
 
 })
 
@@ -467,5 +467,6 @@ $('#switch-arrow-left').click(function () {
     $('#watch').removeClass('switch11');
     $('#arrowdown').removeClass('switch12');
     $('#exit').css('display', 'block');
+    $('.ShowArea').css('margin-left', '494px')
 })
 
