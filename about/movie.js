@@ -28,13 +28,13 @@ $(window).resize(function () {
     $('.bg-1').css({
         'height': vheight,
         'width': vwidth,
-        'background': 'url(https://jenting-wu.github.io/about/My-movie-theater/2440471-3.png) 600px center no-repeat, #222222',
+        'background': 'url(https://jenting-wu.github.io/about/My-movie-theater/backgroundD.png) 600px center no-repeat, #222222',
         'background-size': 'contain'
     });
     $('.bg-2').css({
         'height': vheight,
         'width': vwidth,
-        'background': 'url(https://jenting-wu.github.io/about/My-movie-theater/background2.png) 120px center no-repeat, rgba(255, 242, 232, 0.788)',
+        'background': 'url(https://jenting-wu.github.io/about/My-movie-theater/backgroundL.png) 120px center no-repeat, rgba(255, 242, 232, 0.788)',
         'background-size': 'contain',
 
     });

@@ -35,7 +35,7 @@ body {
     /* width: 1536px; */
     width: 100vw;
     height: 100vh;
-    background: url(https://jenting-wu.github.io/about/My-movie-theater/2440471-3.png) 600px center no-repeat, #222222;
+    background: url(https://jenting-wu.github.io/about/My-movie-theater/backgroundD.png) 600px center no-repeat, #222222;
     /* img : 客聽 */
     background-size: contain;
 
@@ -45,7 +45,7 @@ body {
     /* width: 1536px; */
     width: 100vw;
     height: 100vh;
-    background: url(https://jenting-wu.github.io/about/My-movie-theater/background2.png) 120px center no-repeat, rgba(255, 242, 232, 0.788);
+    background: url(https://jenting-wu.github.io/about/My-movie-theater/backgroundL.png) 120px center no-repeat, rgba(255, 242, 232, 0.788);
     /* img : 客聽 */
     background-size: contain;
 }
