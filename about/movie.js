@@ -69,6 +69,7 @@ $(window).resize(function () {
     });
 });
 
+
 $('.wrap').on('click', '#switch-arrow-right', function () {
     $(window).resize(function () {
         var vwidth = $(window).width()
@@ -76,10 +77,21 @@ $('.wrap').on('click', '#switch-arrow-right', function () {
         $('.background-wrap').css({
             'height': vheight,
             'width': vwidth * 2,
-            'left': -vwidth,
+            'left': -vwidth
         });
     })
+});
 
+$('.wrap').on('click', '#switch-arrow-left', function () {
+    $(window).resize(function () {
+        var vwidth = $(window).width()
+        var vheight = $(window).height();
+        $('.background-wrap').css({
+            'height': vheight,
+            'width': vwidth * 2,
+            'left': 0
+        });
+    })
 });
 
 $('.logo').click(function () {
@@ -251,6 +263,8 @@ $('#movieData').on('click', '.movie', function () {
         $('.movieInfo').css('background-color', 'rgba(77, 77, 77, 0.7)');
         $('.movieInfo').css('transform', 'scale(2) rotateY(30deg) translateY(4px) translateZ(-270px) skewY(8deg) translateX(4px)');
 
+        $('.ShowArea').css('margin-left', '494px')
+
     };
 });
 
@@ -386,7 +400,7 @@ $('#arrowdown').mouseleave(function () {
 // 切換至右側
 $('#switch-arrow-right').click(function () {
     $(this).css('display', 'none');
-    $('#switch-arrow-left').css('display', 'block');
+    $('#switch-arrow-left').css({ 'display': 'block', 'visibility': 'visible' });
     $('.background-wrap').css('left', '-100vw');
     $('.logo').animate({ margin: "0 -600px", opacity: "0" }, 850);
     $('.logo-2').animate({ margin: "0 870px", opacity: "1" }, 1100);
@@ -438,7 +452,7 @@ $('#movieData').on('mouseleave', '.movie', function () {
 // 切換至 左側
 $('#switch-arrow-left').click(function () {
     $(this).css('display', 'none');
-    $('#switch-arrow-right').css('display', 'block');
+    $('#switch-arrow-right').css({ 'display': 'block', 'visibility': 'visible' });
     $('.background-wrap').css('left', '0');
     $('.logo').animate({ margin: "0 65px", opacity: "1" }, 850);
     $('.logo-2').animate({ margin: "0 750px", opacity: "0" }, 850);
@@ -467,6 +481,5 @@ $('#switch-arrow-left').click(function () {
     $('#watch').removeClass('switch11');
     $('#arrowdown').removeClass('switch12');
     $('#exit').css('display', 'block');
-    $('.ShowArea').css('margin-left', '494px')
 })
 

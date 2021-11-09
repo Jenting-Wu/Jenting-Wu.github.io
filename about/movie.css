@@ -539,6 +539,7 @@ body {
     top: 80%;
     left: 94%;
     transition: 0.8s;
+    transition: visibility 0s;
 }
 
 #switch-arrow-right:hover {
@@ -571,6 +572,7 @@ body {
     top: 80%;
     left: 4%;
     transition: 0.8s;
+    transition: visibility 0s;
     display: none;
 }
 
