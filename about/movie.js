@@ -150,7 +150,7 @@ $.ajax({
                     $('#movieData').prepend(`
             <div class="movie col-5 pointer">
             <div class="img-hidden">
-                <img src="./img/${item.image}" alt="">
+                <img src="${item.image}" alt="">
             </div>
             <h6>${item.name}</h6>
         </div>
