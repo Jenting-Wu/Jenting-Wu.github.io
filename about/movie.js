@@ -16,12 +16,16 @@ $(window).resize(function () {
             'width': vwidth * 2,
             'left': '0px',
         });
+
+        $('.ShowArea').css('margin-left', '494px')
     } if (arrowL == 'block' && arrowR == 'none') {
         $('.background-wrap').css({
             'height': vheight,
             'width': vwidth * 2,
             'left': -vwidth
         });
+
+        $('.ShowArea').css('margin-left', vheight * 1.12 - 314 + 'px')
 
     }
 
@@ -46,19 +50,22 @@ $(window).resize(function () {
         'top': '80%',
         'left': '4%'
     });
-    var bcspot = '494px'
     $('#switch-arrow-right').click(function () {
-        $('.background-wrap').css('left', -vwidth);
+        $('.background-wrap').css({
+            'height': vheight,
+            'width': vwidth * 2,
+            'left': -vwidth
+        });
+        $('.ShowArea').css('margin-left', vheight * 1.12 - 314 + 'px')
     });
-    if ($('.background-wrap').css()) {
-        $('.ShowArea').css('margin-left', '494px');
-    } else {
-        $('.ShowArea').css('margin-left', 400 + vheight * 1.12 + 'px');
-    }
-    $('.background-wrap').css({
-        'height': vheight,
-        'width': vwidth * 2,
-        'left': -vwidth
+
+    $('#switch-arrow-left').click(function () {
+        $('.background-wrap').css({
+            'height': vheight,
+            'width': vwidth * 2,
+            'left': 0
+        });
+        $('.ShowArea').css('margin-left', '494px')
     });
 });
 
