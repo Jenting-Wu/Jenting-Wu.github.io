@@ -103,7 +103,7 @@
             /* animation: drop 1.5s linear forwards; */
             transition: 0.8s;
 
-            display: flex;
+            display: none;
             justify-content: center;
             align-items: center;
         }
@@ -317,8 +317,8 @@
 
         /*  --------------- click: 主圈 ---------------  */
 
-        $('.circle').click(function () {
 
+        $('body').on('click', '.circle', function () {
             /*  --------------- 圈內文字 ---------------  */
             $('.circle p').css('color', 'rgb(226, 225, 225)');
             $('.circle p').css('text-shadow', '2px 2px 5px rgb(80, 80, 80)');
@@ -333,6 +333,7 @@
 
             /*  --------------- 小圈動畫 ---------------  */
             $('.drop').css('opacity', '1');
+            $('.drop').css('display', 'flex');
             $('.drop_1').css('transform', 'translate(-120%, 38%');
             $('.drop_2').css('transform', 'translateY(3%)');
             $('.drop_3').css('transform', 'translate(120%, 38%)');
