@@ -1,0 +1,192 @@
+<!--停止使用模板 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- link: font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- font: Neuton -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&display=swap"
+        rel="stylesheet">
+    <!-- font: Dancing Script -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- link: Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- link: bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <title>HB</title>
+
+    <style>
+        body {
+            height: 100vh;
+            width: 100vw;
+            background: url(bbqHB/10666407.jpeg) no-repeat;
+            background-size: cover;
+            font-family: 'Dancing Script';
+        }
+
+        .main {
+            height: 90%;
+            width: 80%;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /*  --------------- 黑底 ---------------  */
+        .backdrop {
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            z-index: -10;
+            background-color: rgb(26, 26, 26);
+            filter: blur(2px);
+            opacity: 0.45;
+            border: 2px solid white;
+        }
+
+        /*  --------------- 標題 ---------------  */
+        .main>p {
+            color: rgba(241, 241, 241, 0.87);
+            text-shadow: 2px 2px 5px rgba(204, 204, 204, 0.945);
+            font-size: 24px;
+            line-height: 24px;
+            font-weight: 700;
+
+            /* text-align: center; */
+            /* padding: 0 12px; */
+
+            animation: flipInX;
+            animation-duration: 1.2s;
+        }
+
+        .main>.p_last {
+            font-size: 18px;
+        }
+
+        .main span {
+            text-decoration: underline;
+        }
+
+        /*  --------------- 兌換券 ---------------  */
+        .ticket {
+            width: 90%;
+            height: 150px;
+            margin: 6px 0;
+            background-color: rgba(218, 214, 194, 0.719);
+            -webkit-mask-composite: destination-out;
+            mask-composite: subtract;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+
+        .ticket>p {
+            margin: 0 50px 0 26px;
+            color: rgba(58, 58, 58, 0.74);
+            text-shadow: 2px 2px 5px rgb(226, 225, 225);
+            font-size: 26px;
+            line-height: 26px;
+            font-weight: 600;
+            font-style: italic;
+            font-family: 'Neuton', serif;
+            text-align: center;
+
+        }
+
+        .ticket ul {
+            height: 150px;
+            margin-top: 6px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .ticket ul li,
+        .ticket ul li h4 {
+            text-align: center;
+            font-weight: 600;
+            color: rgba(58, 58, 58, 0.74);
+            font-family: 'Neuton', serif;
+        }
+
+        .ticket ul li.p_little {
+            font-size: 12px;
+            line-height: 40px;
+            align-self: flex-end;
+            color: rgba(88, 88, 88, 0.658);
+        }
+
+        .ticket ul li.p_left {
+            text-align: left;
+        }
+
+        .main>a>i {
+            margin-top: 20px;
+            color: rgba(218, 214, 194, 0.911);
+            text-shadow: 2px 2px 5px rgb(87, 87, 87);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <!--黑底 -->
+        <div class="backdrop"></div>
+        <p>DEAR 逸承</p>
+        <p>先恭喜你順利踏上影音的道路</p>
+        <p>真的很替你高興!</p>
+        <p>咩噗老實招了</p>
+        <p>寫網頁花太多時間</p>
+        <p>結果卡片來不及寫啦</p>
+        <p>你要原諒咩噗QQ</p>
+        <p>bla~ bla~ bla~ bla~</p>
+        <p>bla~ bla~ bla~ bla~</p>
+        <p>bla~ bla~ bla~ bla~</p>
+        <p>(以上省略了五萬字咩噗想說的話)</p>
+        <p>最後 生日快樂呀!</p>
+        <p>~LOVE YOU~</p>
+        <p>咩噗</p>
+        <a href="https://jenting-wu.github.io/about/bbqHB"><i class="fas fa-long-arrow-alt-left fa-4x"></i></a>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
