@@ -10,6 +10,12 @@
     <!-- link: font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
+    <!-- font: Neuton -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&display=swap"
+        rel="stylesheet">
     <!-- font: Dancing Script -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,10 +29,14 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <style>
+        * {
+            /* outline: 1px solid red; */
+        }
+
         body {
             height: 100vh;
             width: 100vw;
-            background: url(bbgHB/10666407.jpeg) no-repeat;
+            background: url(img/10666407.jpeg) no-repeat;
             background-size: cover;
             font-family: 'Dancing Script';
         }
@@ -44,6 +54,7 @@
             align-items: center;
         }
 
+        /*  --------------- 黑底 ---------------  */
         .backdrop {
             height: 100%;
             width: 100%;
@@ -55,6 +66,7 @@
             border: 2px solid white;
         }
 
+        /*  --------------- 標題 ---------------  */
         p {
             color: rgba(224, 224, 224, 0.87);
             font-size: 52px;
@@ -66,15 +78,74 @@
 
         }
 
-        .bbq {
-            margin-bottom: 30px;
+        /*  --------------- 所有圈圈的父層 ---------------  */
+        .circle_group {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            /* filter: contrast(10); */
+
         }
 
+        /*  --------------- 小圈圈 ---------------  */
+        .drop {
+            opacity: 0;
+            width: 100px;
+            height: 100px;
+            background-color: rgba(224, 224, 224, 0.699);
+            box-shadow: 0 0 30px rgb(95, 95, 95) inset, 0 0 30px rgba(122, 122, 122, 0.788), 0 0 50px rgb(100, 100, 100);
+            position: absolute;
+            border-radius: 50%;
+            transform: translateY(110%);
+            /* animation: drop 1.5s linear forwards; */
+            transition: 0.8s;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .drop_1 {
+            z-index: 3;
+        }
+
+        .drop_2 {
+            z-index: 2;
+        }
+
+        .drop_3 {
+            z-index: 1;
+        }
+
+        .drop>i {
+            color: rgba(78, 78, 78, 0.76);
+            text-shadow: 2px 2px 5px rgb(226, 225, 225);
+
+        }
+
+
+        /* .drop_1 {
+            transform: translate(-120%, 55%);
+            opacity: 1;
+        }
+
+        .drop_2 {
+            transform: translateY(20%);
+            opacity: 1;
+        }
+
+
+        .drop_3 {
+            transform: translate(120%, 55%);
+            opacity: 1;
+        } */
+
+        /*  --------------- 圓圈 ---------------  */
         .circle {
             width: 175px;
             height: 175px;
             background-color: rgba(224, 224, 224, 0.699);
-            box-shadow: 0 0 30px rgb(107, 107, 107) inset, 0 0 30px rgb(107, 107, 107), 0 0 50px rgb(100, 100, 100);
+            box-shadow: 0 0 30px rgb(95, 95, 95) inset, 0 0 30px rgba(122, 122, 122, 0.788), 0 0 50px rgb(100, 100, 100);
             border-radius: 50%;
             display: flex;
             flex-direction: column;
@@ -82,25 +153,33 @@
             justify-content: center;
             align-items: center;
             transform: translateY(85%);
-            animation: fade_in_circle 1.6s linear;
+            animation: fade_in_circle 1.6s linear, circle 1.6s ease-in-out 1.6s infinite;
         }
 
         .circle p {
-            color: rgba(58, 58, 58, 0.664);
+            color: rgba(58, 58, 58, 0.74);
             text-shadow: 2px 2px 5px rgb(226, 225, 225);
             font-size: 36px;
             line-height: 30px;
-            animation: none
+            font-weight: 400;
+            font-style: italic;
+            animation: none;
+            font-family: 'Neuton', serif;
         }
 
-        i {
+        /*  --------------- 箭頭 ---------------  */
+        .main>i {
+            margin-top: 20px;
+            margin-bottom: 70px;
             opacity: 0;
-            color: rgba(224, 224, 224, 0.582);
-            text-shadow: 0 20px rgba(224, 224, 224, 0.411);
+            color: rgb(255, 255, 255);
+            text-shadow: 2px 2px 5px rgb(71, 71, 71);
             animation: arrow 1.5s linear 2s infinite,
                 fade_in 1s linear 1s;
         }
 
+
+        /*  --------------- 箭頭動畫 ---------------  */
         @keyframes arrow {
             0% {
                 opacity: 1;
@@ -131,6 +210,7 @@
             }
         }
 
+        /*  --------------- 淡入 ---------------  */
         @keyframes fade_in {
             0% {
                 opacity: 0;
@@ -145,20 +225,40 @@
             }
         }
 
-        @keyframes fade_in_circle {
+        /*  --------------- 圓圈閃爍 ---------------  */
+        @keyframes circle {
             0% {
-                opacity: 0;
+                opacity: 1;
                 transform: translateY(85%);
+                box-shadow: 0 0 30px rgb(95, 95, 95) inset, 0 0 30px rgba(122, 122, 122, 0.788), 0 0 50px rgb(100, 100, 100);
             }
 
             50% {
-                opacity: 0.5;
+                opacity: 0.85;
                 transform: translateY(85%);
+                box-shadow: 0 0 30px rgb(94, 94, 94) inset, 0 0 40px rgb(201, 201, 201), 0 0 70px rgba(85, 85, 85, 0.87);
+
             }
 
             100% {
                 opacity: 1;
                 transform: translateY(85%);
+                box-shadow: 0 0 30px rgb(95, 95, 95) inset, 0 0 30px rgba(122, 122, 122, 0.788), 0 0 50px rgb(100, 100, 100);
+            }
+        }
+
+        /*  --------------- 圓圈淡入 ---------------  */
+        @keyframes fade_in_circle {
+            0% {
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 0.5;
+            }
+
+            100% {
+                opacity: 1;
             }
         }
     </style>
@@ -166,14 +266,30 @@
 
 <body>
     <div class="main">
+        <!--黑底 -->
         <div class="backdrop"></div>
         <p>Welcome</p>
         <p>BBQ</p>
+        <!--箭頭 -->
         <i class="fas fa-chevron-down fa-2x"></i>
-        <div class="circle">
-            <p>Tap</p>
-            <p>to</p>
-            <p>Start</p>
+        <!--小圈圈 -->
+        <div class="circle_group">
+            <div class="drop drop_1">
+                <i class="fas fa-gift fa-4x"></i>
+            </div>
+
+            <div class="drop drop_2">
+                <i class="fas fa-birthday-cake fa-4x"></i>
+            </div>
+            <div class="drop drop_3">
+                <i class="far fa-envelope-open fa-4x"></i>
+            </div>
+            <!--主圈 -->
+            <div class="circle">
+                <p class="p_1">Tap</p>
+                <p class="p_2">to</p>
+                <p class="p_3">Start</p>
+            </div>
         </div>
     </div>
 
@@ -190,9 +306,45 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script>
+
+        /*  --------------- click: 主圈 ---------------  */
+
         $('.circle').click(function () {
+
+            /*  --------------- 圈內文字 ---------------  */
             $('.circle p').css('color', 'rgb(226, 225, 225)');
             $('.circle p').css('text-shadow', '2px 2px 5px rgb(80, 80, 80)');
+            $('.circle > .p_1').text('Choose');
+            $('.circle > .p_2').text('Your');
+            $('.circle > .p_3').text('GIFT');
+
+
+            /*  --------------- 主圈動畫 ---------------  */
+            $('.circle').css('animation', 'none');
+
+
+            /*  --------------- 小圈動畫 ---------------  */
+            $('.drop').css('opacity', '1');
+            $('.drop_1').css('transform', 'translate(-120%, 55%)');
+            $('.drop_2').css('transform', 'translateY(20%)');
+            $('.drop_3').css('transform', 'translate(120%, 55%)');
+        })
+
+        /*  --------------- click: 小圈 ---------------  */
+
+        $('.drop_1').click(function () {
+            $('.drop_1 i').css('color', 'rgba(235, 235, 235, 0.9)');
+            $('.drop_1 i').css('text-shadow', '2px 2px 6px rgb(65, 65, 65)');
+        })
+
+        $('.drop_2').click(function () {
+            $('.drop_2 i').css('color', 'rgba(235, 235, 235, 0.9)');
+            $('.drop_2 i').css('text-shadow', '2px 2px 6px rgb(65, 65, 65)');
+        })
+
+        $('.drop_3').click(function () {
+            $('.drop_3 i').css('color', 'rgba(235, 235, 235, 0.9)');
+            $('.drop_3 i').css('text-shadow', '2px 2px 6px rgb(65, 65, 65)');
         })
     </script>
 
