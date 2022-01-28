@@ -25,13 +25,16 @@
     <!-- link: Animate.css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
-    <title>HB</title>
+    <!-- link: bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <title>HB</title>
+
     <style>
-        /* * {
+        * {
             outline: 1px solid red;
-        } */
+        }
 
         body {
             height: 100vh;
@@ -103,7 +106,7 @@
             /* animation: drop 1.5s linear forwards; */
             transition: 0.8s;
 
-            display: none;
+            display: flex;
             justify-content: center;
             align-items: center;
         }
@@ -317,8 +320,8 @@
 
         /*  --------------- click: 主圈 ---------------  */
 
+        $('.circle').click(function () {
 
-        $('body').on('click', '.circle', function () {
             /*  --------------- 圈內文字 ---------------  */
             $('.circle p').css('color', 'rgb(226, 225, 225)');
             $('.circle p').css('text-shadow', '2px 2px 5px rgb(80, 80, 80)');
@@ -333,7 +336,6 @@
 
             /*  --------------- 小圈動畫 ---------------  */
             $('.drop').css('opacity', '1');
-            $('.drop').css('display', 'flex');
             $('.drop_1').css('transform', 'translate(-120%, 38%');
             $('.drop_2').css('transform', 'translateY(3%)');
             $('.drop_3').css('transform', 'translate(120%, 38%)');
