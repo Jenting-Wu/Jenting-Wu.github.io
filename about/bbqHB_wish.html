@@ -1,0 +1,200 @@
+<!--停止使用模板 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- link: font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- font: Neuton -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&display=swap"
+        rel="stylesheet">
+    <!-- font: Dancing Script -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- link: Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- link: bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <title>HB_wish</title>
+
+    <style>
+        body {
+            height: 100vh;
+            width: 100vw;
+            background: url(img/10666407.jpeg) no-repeat;
+            background-size: cover;
+
+        }
+
+        .main {
+            height: 90%;
+            width: 80%;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .backdrop {
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            z-index: -10;
+            /* background-color: antiquewhite; */
+            background-color: black;
+            filter: blur(2px);
+            opacity: 0.45;
+            border: 2px solid white;
+            transition: .65s;
+        }
+
+        .main>p {
+            color: rgba(241, 241, 241, 0.87);
+            text-shadow: 2px 2px 5px rgba(204, 204, 204, 0.945);
+            font-size: 24px;
+            line-height: 24px;
+            font-weight: 700;
+
+            /* text-align: center; */
+            /* padding: 0 12px; */
+
+            animation: flipInX;
+            animation-duration: 1.2s;
+        }
+
+
+
+        label>p {
+            color: rgba(241, 241, 241, 0.87);
+            font-size: 20px;
+            line-height: 24px;
+            font-weight: 700;
+
+            /* text-align: center; */
+            padding: 0 10px;
+
+            animation: flipInX;
+            animation-duration: 1.2s;
+        }
+
+        label p.p_last {
+            font-size: 16px;
+        }
+
+        .main>a>i {
+            margin-top: 20px;
+            color: rgba(218, 214, 194, 0.911);
+            text-shadow: 2px 2px 5px rgb(87, 87, 87);
+        }
+
+        form {
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: space-between;
+
+        }
+
+        textarea {
+            width: 100%;
+            height: 250px;
+        }
+
+        .time {
+            color: rgba(218, 214, 194, 0.911);
+            text-shadow: 2px 2px 6px rgb(87, 87, 87);
+            line-height: 44px;
+            font-size: 30px;
+            font-weight: 700;
+            text-align: center;
+            animation: fadeInDown;
+            animation-duration: 1.6s;
+        }
+
+        #showbox {
+            color: rgba(218, 214, 194, 0.911);
+            text-shadow: 2px 2px 6px rgb(87, 87, 87);
+            line-height: 44px;
+            font-size: 40px;
+            font-weight: 700;
+            text-align: center;
+            animation: fadeInDown;
+            animation-duration: 1.6s;
+        }
+
+        button {
+            width: 80px;
+            height: 30px;
+            align-self: flex-end;
+        }
+
+        * {
+            /* outline: 1px solid red; */
+        }
+    </style>
+</head>
+
+<body onload="ShowTime()">
+    <div class="main">
+        <div class="backdrop"></div>
+        <div class="time">
+            <div>最後倒數啦!</div>
+            <div id="showbox"></div>
+        </div>
+
+        <form action="https://formspree.io/f/mgedaedr" method="POST">
+            <label>
+                <P>有什麼想對咩噗說的話嗎?</P>
+                <p>可以對咩噗許願喔!</p>
+                <p class="p_last">(留言將直達小咩噗信箱)</p>
+                <textarea name="message"></textarea>
+            </label>
+            <button class="btn btn-light" type="submit">送出</button>
+        </form>
+        <a href="https://jenting-wu.github.io/about/bbqHB"><i class="fas fa-long-arrow-alt-left fa-4x"></i></a>
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <script language="JavaScript">
+        function ShowTime() {
+            var NowDate = new Date();
+            var h = NowDate.getHours();
+            var m = NowDate.getMinutes();
+            var s = NowDate.getSeconds();
+            var hh = 23 - h;
+            var mm = 60 - m;
+            var ss = 60 - s;
+            document.getElementById('showbox').innerHTML = hh + '時' + mm + '分' + ss + '秒';
+            setTimeout('ShowTime()', 1000);
+        }
+    </script>
+</body>
+
+</html>
